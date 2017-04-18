@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        		<title>Vai que dá</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    	</head>
+
+	<body>
+		<div id="progressoBarra" class="progress">
+       			 <div id="progresso" class="progress-bar progress-bar-striped active" role="progressbar"></div>
+   		</div>
+		<script type="text/javascript">
+        			var progresso = 0;
+        			var intervalo = setInterval(function() {
+            				progresso += 2;
+            				document.getElementById('progresso').style.width = progresso + "%";
+
+            				if(progresso == 150) {
+					alert("Sua página foi totalmente carregada!");
+                				clearInterval(intervalo);
+                				document.getElementById('container').style.display = "block";
+                				document.getElementById('progressoBarra').style.display = "none";
+           			 	}
+       			 }, 50);
+    		</script>
+
+		<div id="container">
+			<div class="col_10 header">
+				<h1>&#9998 Email de DAW &#9998<h1>
+				<p class="label label-info">Isso é o título <span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span></p>
+			</div>
+
+			<div class="col_2 notifications">
+				<ul class="nav nav-pills" role="tablist">
+    					<li class="aba" role="presentation"><a href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Received <span class="badge">+9999</span></a></li>
+    					<li class="aba" role="presentation"><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>  Sent <span class="badge">2</span></a></li>
+    					<li class="aba" role="presentation"><a href="#">  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>  Trash <span class="badge">1</span></a></li>
+				</ul>
+				<button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> Group Chats <span class="badge">0</span></button>
+			</div>
+
+			<div class="col_8 email">
+				<div>
+					<div class="alert alert-warning alert-dismissible fade in" role="alert">
+    						<button type="button" class="close" data-dismiss="alert" aria-label="">
+							<span aria-hidden="true" class="teste">×</span>
+   						</button>
+						<strong>Colé!</strong> - Isso é um e-mail <span class="glyphicon glyphicon-hand-down" aria-hidden="true">
+					</div>
+
+					<h4>Estágio</h4>
+					<h5>jemaf@queropontos.com.br</h5>
+					<div class="msg">
+						<p>Aqui é Body Builder Ipsum PORRA! É esse que a gente quer, é ele que nóis vamo buscar. Ó o homem ali porra!, é 13 porra! Ajuda o maluco que tá doente. Eu quero esse 13 daqui a pouquinho aí. AHHHHHHHHHHHHHHHHHHHHHH..., porra! Vem porra!</p>
+						<p>Vo derrubar tudo essas árvore do parque ibirapuera. Sabe o que é isso daí? Trapézio descendente é o nome disso aí. Eu quero esse 13 daqui a pouquinho aí. Bora caralho, você quer ver essa porra velho. Não vai dá não. Ó o homem ali porra!, é 13 porra!</p>
+						<p>Que não vai dá rapaiz, não vai dá essa porra. Tá comigo porra. Vai subir árvore é o caralho porra! Negativa Bambam negativa. Ele tá olhando pra gente. Eita porra!, tá saindo da jaula o monstro!</p>
+						<p>É esse que a gente quer, é ele que nóis vamo buscar. Bora caralho, você quer ver essa porra velho. É 37 anos caralho! Ajuda o maluco que tá doente. É nóis caraio é trapezera buscando caraio! Sai de casa comi pra caralho porra.</p>
+						<p>Eita porra!, tá saindo da jaula o monstro! Sabe o que é isso daí? Trapézio descendente é o nome disso aí. Birl! Bora caralho, você quer ver essa porra velho. É nóis caraio é trapezera buscando caraio! É verão o ano todo vem cumpadi.</p>
+					</div>
+				</div>
+				<div>
+					
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
